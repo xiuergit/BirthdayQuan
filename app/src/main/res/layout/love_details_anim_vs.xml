@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="开心快乐在无锡"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_love_details_title"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:layout_margin="@dimen/love_details_amin_vs_margin"/>
+
+    <TextView
+        android:text="2015年10月24日"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_love_details_time"
+        android:layout_below="@id/tv_love_details_title"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/love_details_amin_vs_margin"/>
+    <TextView
+        android:text="无锡"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_love_details_address"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/tv_love_details_title"
+        android:layout_toRightOf="@id/tv_love_details_time"
+        android:layout_margin="@dimen/love_details_amin_vs_margin"/>
+
+    <TextView
+        android:text="在一个风和日丽的清晨，我们出发来到了无锡，冻得涩涩发抖.."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_love_details_content"
+        android:lines="3"
+        android:ellipsize="end"
+        android:textSize="21sp"
+        android:layout_below="@+id/tv_love_details_time"
+        android:layout_alignRight="@+id/tv_love_details_address"
+        android:layout_alignEnd="@+id/tv_love_details_address"
+        android:lineSpacingExtra="@dimen/love_details_amin_vs_margin"
+        android:drawablePadding="@dimen/love_details_amin_vs_margin"/>
+
+    <ImageView
+        android:id="@+id/iv_love_details"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:padding="2dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+
+         />
+
+
+</RelativeLayout>

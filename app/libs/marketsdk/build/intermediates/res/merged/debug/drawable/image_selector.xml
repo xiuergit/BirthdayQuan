@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/favorite_add" android:state_pressed="true" />
+    //将bg_1.xml文件放入选择器，其中state_pressed表示被按下为true加载背景文件
+    <item android:drawable="@drawable/favorite_delete" />//没被按下是bg.xml背景，item不能互换
+</selector>

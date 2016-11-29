@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.zhangxiu.birthdayquan.MainActivity"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <!--<include layout="@layout/navigation"-->
+        <!--android:id="@+id/love_nav_main"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--/>-->
+    <com.example.zhangxiu.birthdayquan.Widget.NavigationBar
+        android:id="@+id/love_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        />
+    <FrameLayout
+        android:id="@+id/fl_main_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></FrameLayout>
+
+    <com.ashokvarma.bottomnavigation.BottomNavigationBar
+        android:id="@+id/myBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.ashokvarma.bottomnavigation.BottomNavigationBar>
+
+</LinearLayout>

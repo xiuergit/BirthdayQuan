@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/color_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/bai_fen_bi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/xianliang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="价"
+                android:textColor="#fff"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/xianliang_zhi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textColor="#fff"
+                android:layout_toRightOf="@id/xianliang"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/shizhi"
+                android:textColor="#fff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/xianliang"
+                android:layout_below="@id/xianliang"
+                android:text="额"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/shizhi_zhi"
+                android:textColor="#fff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/xianliang_zhi"
+                android:layout_below="@id/xianliang_zhi"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/PE"
+                android:textColor="#fff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/xianliang"
+                android:layout_below="@id/shizhi"
+                android:text="量"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/PE_zhi"
+                android:textColor="#fff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/shizhi_zhi"
+                android:layout_below="@id/shizhi_zhi"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/linechart"
+                android:layout_width="100dp"
+                android:layout_height="50dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <com.github.mikephil.charting.charts.CandleStickChart
+                android:id="@+id/candleChart"
+                android:layout_width="100dp"
+                android:layout_height="50dp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/zhang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="涨"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/zhang_zhi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/zhang"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/ping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/zhang"
+                android:layout_below="@id/zhang"
+                android:text="平"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/ping_zhi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/zhang_zhi"
+                android:layout_below="@id/zhang_zhi"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/die"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/zhang"
+                android:layout_below="@id/ping"
+                android:text="跌"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/die_zhi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/ping_zhi"
+                android:layout_below="@id/ping_zhi"
+                android:textSize="10sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#000" />
+</LinearLayout>

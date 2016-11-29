@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/iv_love_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/love1"
+        android:layout_margin="4dp"/>
+    <com.example.zhangxiu.birthdayquan.Widget.MTextView
+        android:id="@+id/tv_love_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_love_head"
+        android:layout_alignTop="@id/iv_love_head"
+        android:paddingTop="10dp"
+        android:text="love"
+        android:textSize="23sp"
+        />
+    <TextView
+        android:id="@+id/tv_love_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_toRightOf="@id/iv_love_head"
+       android:layout_below="@id/tv_love_title"
+        android:layout_marginTop="10dp"
+        android:text="时间：2016年6月"
+        android:layout_alignBottom="@id/iv_love_head"
+        android:textSize="18sp"/>
+    <TextView
+        android:id="@+id/tv_love_address"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_love_title"
+        android:layout_toRightOf="@id/tv_love_time"
+        android:text="地点：烟台"
+        android:textSize="18sp"
+
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EEAAAA"
+        android:layout_below="@id/iv_love_head"
+        />
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_nav_left_viewgroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentLeft="true">
+
+
+        <com.example.zhangxiu.birthdayquan.Widget.MButton android:id="@+id/bt_nav_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ffff"
+            android:text="返回"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_nav_title_viewgroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+        <com.example.zhangxiu.birthdayquan.Widget.MButton
+            android:id="@+id/bt_nav_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="美好回忆"
+            android:background="#ffff"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_nav_right_viewgroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        >
+        <com.example.zhangxiu.birthdayquan.Widget.MButton
+            android:id="@+id/bt_nav_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置"
+            android:background="#ffff"
+            />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

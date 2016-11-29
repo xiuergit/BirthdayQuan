@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tab_titles">
+        <item>首页</item>
+        <item>全部A股</item>
+        <item>指数</item>
+        <item>创业板</item>
+        <item>沪深300</item>
+        <item>更多</item>
+    </string-array>
+</resources>

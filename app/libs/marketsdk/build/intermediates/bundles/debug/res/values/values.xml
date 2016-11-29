@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tab_titles">
+        <item>首页</item>
+        <item>全部A股</item>
+        <item>指数</item>
+        <item>创业板</item>
+        <item>沪深300</item>
+        <item>更多</item>
+    </string-array>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#FF4040</color>
+    <color name="colorPrimaryDark">#d40a1d</color>
+    <color name="header">#ff33b5e5</color>
+    <color name="white">#ffffff</color>
+    <declare-styleable name="ProgressWheel"><attr format="boolean" name="matProg_progressIndeterminate"/><attr format="color" name="matProg_barColor"/><attr format="color" name="matProg_rimColor"/><attr format="dimension" name="matProg_rimWidth"/><attr format="float" name="matProg_spinSpeed"/><attr format="integer" name="matProg_barSpinCycleTime"/><attr format="dimension" name="matProg_circleRadius"/><attr format="boolean" name="matProg_fillRadius"/><attr format="dimension" name="matProg_barWidth"/><attr format="boolean" name="matProg_linearProgress"/></declare-styleable>
+    <declare-styleable name="topBar"><attr format="string" name="titleText"/><attr format="dimension" name="titleSize"/><attr format="color" name="titleColor"/><attr format="boolean" name="titleVisible"/><attr format="string" name="leftText"/><attr format="dimension" name="leftTextSize"/><attr format="color" name="leftTextColor"/><attr format="string" name="rightText"/><attr format="dimension" name="rightTextSize"/><attr format="color" name="rightTextColor"/><attr format="reference" name="ImageLeftBackGround"/><attr format="boolean" name="ImageLeftVisible"/><attr format="reference" name="ImageRightBackGround"/><attr format="boolean" name="ImageRightVisible"/></declare-styleable>
+    <string name="app_name">MarketSdk</string>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="CustomizedWindowTitleBackground">
+        <item name="android:background">#fff</item>
+    </style>
+    <style name="titlebarstyle" parent="android:Theme">
+        <item name="android:windowTitleSize">68dp</item>
+        <item name="android:clipToPadding">true</item>
+        <item name="android:windowTitleBackgroundStyle">@style/CustomizedWindowTitleBackground</item>
+    </style>
+</resources>

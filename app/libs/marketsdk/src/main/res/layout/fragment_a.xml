@@ -1,0 +1,162 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2E2E2E"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_layout" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refrshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <include layout="@layout/head_stock" />
+
+                <RadioGroup
+                    android:id="@+id/fragment_rg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="5dp">
+
+                    <RadioButton
+                        android:id="@+id/fragment_fenshi"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="分时"
+                        android:textColor="#f00" />
+
+                    <RadioButton
+                        android:id="@+id/fragment_wuri"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="五日"
+                        android:textColor="#fff" />
+
+                    <RadioButton
+                        android:id="@+id/fragment_riK"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="日K"
+                        android:textColor="#fff" />
+
+                    <RadioButton
+                        android:id="@+id/fragment_zhouK"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="周K"
+                        android:textColor="#fff" />
+
+                    <RadioButton
+                        android:id="@+id/fragment_yueK"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="月K"
+                        android:textColor="#fff" />
+                </RadioGroup>
+
+                <LinearLayout
+                    android:id="@+id/fragment_main_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+                <RadioGroup
+                    android:id="@+id/fragment_rg_02"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="5dp">
+
+                    <RadioButton
+                        android:id="@+id/fragment_jinxinhao"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="金信号"
+                        android:textColor="#f00" />
+
+                    <RadioButton
+                        android:id="@+id/fragment_yanbao"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="研报"
+                        android:textColor="#fff" />
+
+                    <RadioButton
+                        android:id="@+id/fragment_gonggao"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="公告"
+                        android:textColor="#fff" />
+
+                    <RadioButton
+                        android:id="@+id/fragment_zhengduan"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="诊断"
+                        android:textColor="#fff" />
+
+                    <RadioButton
+                        android:id="@+id/fragment_F10"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="F10"
+                        android:textColor="#fff" />
+                </RadioGroup>
+
+                <LinearLayout
+                    android:id="@+id/fragment_main_ll_02"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+            </LinearLayout>
+        </ScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+</LinearLayout>
+

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="#FFED00"
+
+    >
+
+    <!--时间-->
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:background="#FF00ff"
+            android:id="@+id/tv_memory_time"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="2015年12月10日"
+            />
+
+    </LinearLayout>
+
+
+    <!--中间线-->
+    <LinearLayout
+        android:background="#BEAAAA"
+        android:layout_width="28dp"
+
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/memory_line"
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:background="#ff0000"
+            android:layout_gravity="center"
+
+            />
+        <ImageView
+            android:id="@+id/iv_memory_point"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:background="@drawable/umeng_socialize_follow_on"/>
+
+
+    </LinearLayout>
+
+    <!--内容-->
+
+  <LinearLayout
+      android:layout_width="0dp"
+      android:layout_weight="1"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      android:background="#FF0000">
+
+      <TextView
+          android:id="@+id/tv_memory_title"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="title"/>
+
+      <ImageView
+          android:id="@+id/iv_memory"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:background="@drawable/love"/>
+
+
+  </LinearLayout>
+
+
+
+
+
+
+   <!--<include  layout="@layout/memory_fragment_item_right"-->
+    <!--android:id="@+id/memory_right"-->
+
+    <!--/>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/tv_memory_title"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentRight="true"-->
+
+
+        <!--android:text="title"-->
+
+        <!--android:textSize="24sp"-->
+        <!--/>-->
+
+    <!--<ImageView-->
+        <!--android:id="@+id/iv_memory"-->
+        <!--android:layout_below="@id/tv_memory_title"-->
+
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+
+        <!--android:background="@drawable/love"/>-->
+
+</LinearLayout>
